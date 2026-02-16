@@ -1,4 +1,4 @@
-// 1. Importação das Imagens (Ajustado para os arquivos reais que você tem)
+// 1. Importação das Imagens
 import corte01 from './assets/images/cortes/corte-01.webp';
 import corte02 from './assets/images/cortes/corte-02.webp';
 import corte03 from './assets/images/cortes/corte-03.webp';
@@ -19,7 +19,8 @@ export const BUSINESS_INFO = {
   city: '1000-193 Lisboa',
   openingHours: 'Segunda a Sábado: 11:00 - 20:00',
   bookingUrl: 'https://wa.me/351917231653', 
-  googleMapsUrl: 'https://www.google.com/maps/place/1985+Barbershop/@38.7408,-9.135,17z',
+  // LINK ATUALIZADO ABAIXO:
+  googleMapsUrl: 'https://maps.app.goo.gl/tRd7fZMz7EGjADiKA',
   instagramUrl: 'https://instagram.com/' 
 };
 
@@ -36,7 +37,7 @@ export const REVIEWS = [
     id: 1,
     author: 'David FL 1950',
     date: 'Há 5 meses',
-    text: 'Corto com o Alessandro já há quase 2 anos. É o melhor barbeiro de Lisboa!',
+    text: 'Corto com o Alessandro já há quase 2 anos. É o melhor barbeiro de Lisboa! Muito top, amigável e confiável!',
     avatar: 'https://ui-avatars.com/api/?name=David+FL&background=991b1b&color=fff'
   },
   {
@@ -48,7 +49,7 @@ export const REVIEWS = [
   }
 ];
 
-// 5. Galeria (Ajustada para os arquivos existentes)
+// 5. Galeria
 export const IMAGES = {
   cortes: [
     { id: 1, url: corte01, alt: 'Corte 1985' },

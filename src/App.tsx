@@ -7,8 +7,12 @@ import {
 import Navbar from './components/Navbar';
 import { BUSINESS_INFO, SERVICES, REVIEWS, IMAGES } from './constants';
 
-// Link de imagem genérica para o mapa (enquanto você não tem o print)
-const MAP_SOURCE = "https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1200&sat=-100";
+// 1. IMPORTAR A IMAGEM LOCAL
+// Certifique-se que o arquivo 'mapa-localizacao.webp' está na pasta src/assets/images
+import mapaImg from './assets/images/mapa-localizacao.webp'; 
+
+// 2. USAR A IMAGEM IMPORTADA NA VARIÁVEL
+const MAP_SOURCE = mapaImg;
 
 const App: React.FC = () => {
   return (
