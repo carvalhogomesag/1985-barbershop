@@ -3,11 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barbearia Premium - Lisboa</title>
+    
+    <!-- SEO PRINCIPAL -->
+    <title>1985 Barbershop | O Melhor Barbeiro do Areeiro, Lisboa</title>
+    <meta name="description" content="Barbearia clássica no Areeiro liderada pelo mestre Alessandro. Cortes de precisão, barba com toalha quente e ambiente vintage desde 1985. Agende online." />
+    <meta name="keywords" content="barbeiro areeiro, barbearia lisboa, corte masculino, barba toalha quente, alessandro barbeiro, 1985 barbershop, corte clássico" />
+    <meta name="author" content="1985 Barbershop" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- REDES SOCIAIS (WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://1985barbershop.netlify.app/" />
+    <meta property="og:title" content="1985 Barbershop - Estilo Clássico no Areeiro" />
+    <meta property="og:description" content="Venha conhecer o espaço do Alessandro. Corte e Barba com excelência e tradição." />
+    <!-- Dica: Quando tiver uma foto real da fachada, coloque o link dela aqui no content -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- DADOS ESTRUTURADOS (JSON-LD) para o Google Maps -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "name": "1985 Barbershop",
+      "image": "https://1985barbershop.netlify.app/assets/interior-01.webp",
+      "@id": "https://1985barbershop.netlify.app",
+      "url": "https://1985barbershop.netlify.app",
+      "telephone": "+351917231653",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. de Madrid 3D",
+        "addressLocality": "Lisboa",
+        "postalCode": "1000-193",
+        "addressCountry": "PT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 38.7408,
+        "longitude": -9.1350
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "11:00",
+        "closes": "20:00"
+      }
+    }
+    </script>
+
+    <!-- ESTILOS E FONTES -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -17,6 +73,7 @@
         font-family: 'Playfair Display', serif;
       }
     </style>
+    
     <script type="importmap">
     {
       "imports": {
@@ -27,12 +84,11 @@
       }
     }
     </script>
-    <!-- Se você moveu o index.css para dentro de src, mude para /src/index.css -->
     <link rel="stylesheet" href="/src/index.css">
   </head>
-  <body class="bg-stone-950 text-stone-100 selection:bg-amber-600 selection:text-white">
+  <!-- Atualizei a cor de seleção para ROSE (Vinho) -->
+  <body class="bg-stone-950 text-stone-100 selection:bg-rose-600 selection:text-white">
     <div id="root"></div>
-    <!-- Alterado de /index.tsx para /src/index.tsx -->
     <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>
